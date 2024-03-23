@@ -1,3 +1,4 @@
+import Setting from "./components/setting/setting";
 import Classic from "./layouts/classic/classic";
 
 export default function Layout() {
@@ -5,6 +6,7 @@ export default function Layout() {
     return (
         <>
             {layout === 'classic' && <Classic />}
+            <Setting />
         </>
     )
 }
