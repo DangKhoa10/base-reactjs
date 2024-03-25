@@ -1,0 +1,7 @@
+{
+    "title": "Hello World",
+    "app": {
+        "text": "hi {{framework}}"
+    }
+}
+
