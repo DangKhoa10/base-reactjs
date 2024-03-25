@@ -7,7 +7,8 @@ export default {
     screens: {
       'mobile': { 'max': '767px' },
       'tablet': { 'min': '768px', 'max': '1023px' },
-      'laptop': { 'min': '1024px' }
+      'laptop': { 'min': '1024px', 'max': '1439px' },
+      'desktop': { 'min': '1440px' },
     },
     extend: {
 
