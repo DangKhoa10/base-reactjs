@@ -10,7 +10,7 @@ export function About() {
         <div>
             <div className="mt-5 ">
                 <button
-                className="p-2 m-2 rounded-lg bg-primary text-white"
+                className="p-2 m-2 rounded-lg bg-primary text-foreground"
                     aria-label="Increment value"
                     onClick={() => dispatch(increment())}
                 >

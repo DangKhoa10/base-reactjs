@@ -3,7 +3,9 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-  ], theme: {
+  ],
+  darkMode: 'selector',
+  theme: {
     screens: {
       'mobile': { 'max': '767px' },
       'tablet': { 'min': '768px', 'max': '1023px' },
@@ -27,6 +29,7 @@ export default {
           950: 'var(--primary-color-950)',
           DEFAULT: 'var(--primary-color)',
         },
+        secondary: 'var(--secondary)',
         background: 'var(--background)',
         foreground: 'var(--foreground)'
       }

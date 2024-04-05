@@ -1,9 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./features/counter/counter";
+import themeReducer from "./features/theme/theme";
+import schemeReducer from "./features/scheme/scheme";
+import layoutReducer from "./features/layout/layout";
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    theme: themeReducer,
+    scheme: schemeReducer,
+    layout: layoutReducer,
   },
 });
 
