@@ -31,6 +31,7 @@ export default {
         },
         secondary: 'var(--secondary)',
         background: 'var(--background)',
+        hover: 'var(--bg-hover)',
         foreground: 'var(--foreground)'
       }
     },

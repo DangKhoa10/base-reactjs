@@ -1,16 +1,16 @@
-import { useTranslation } from "react-i18next";
 import { Outlet } from "react-router-dom";
-import Language from "../../components/language/Language";
+import Sidebar from "../../components/sidebar/sidebar";
+import Toolbar from "../../components/toolbar/toolbar";
 
 export default function Classic() {
-    const { t } = useTranslation();
-
     return <>
-        <div className="sidebar"></div>
-        <div className="main">
-            <h1>{t('title')}</h1>
-            <h5>{t('app.text', { framework: 'reactjs' })}</h5>
-            <Language />
+        <div className="fixed top-0 bottom-0 left-0 w-64">
+            <Sidebar></Sidebar>
+        </div>
+        <div className="w-full pl-64 h-16 fixed top-0">
+            <Toolbar></Toolbar>
+        </div>
+        <div className="pl-64 pt-16 overflow-y-auto">
             <Outlet></Outlet>
         </div>
     </>
